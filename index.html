@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Jason Squires' Projects</title>
+
+<link rel="icon" type="image/png" href="./icon.png">
+<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<button onClick="handleToggleDarkModeButton()">Toggle Dark Mode</button>
+
+<h1>Jason Squires' Projects</h1>
+<p>This site is a compilation of just a few of the projects I've worked on over the years that I'm proud of (whether that be because I learned something cool and/or the outcome was cool).<br><em>Not all of them are completed, but they still showcase what I've done and learned!</em></p>
+
+<h2>Personal</h2>
+<ul>
+	<li>GameBoy Advance Programming
+		<ul>
+			<li>
+				<details>
+					<summary>GBA Backgrounds</summary>
+					<img src="https://raw.githubusercontent.com/JKSquires/gba-background-test/refs/heads/main/screenshot.png">
+					<p>Language: ARM Assembly</p>
+					<a href="https://github.com/JKSquires/gba-background-test" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+					<p>There are all sorts of different layers and modes in the GBA, and in this program, I was learning how to use the background layers! After I created the tileset (including a pallete) and tilemap, I programmed this "game" that shows off all the tiles in a little scene. In making this program, I learned how to use DMA (Direct Memory Access) on the GBA to copy data from the Game Pak ROM to VRAM and how to use background layers.</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>GBA Practice and Test Programs</summary>
+					<p>Language: ARM Assembly</p>
+					<a href="https://github.com/JKSquires/practicing-gba-programming" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+					<p>I decided that I should put practice and test programs somewhere where I can show them off and hopefully help people who are new to GBA ARM programming, so I started writing a few programs and sticking them in a Github repo. Some of these programs were easier to make than others, but they were all fun to make nonetheless. By writing these programs, I believe I got even better at programming assembly for the GBA.</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>Music with Timers</summary>
+					<p>Language: ARM Assembly</p>
+					<a href="https://github.com/JKSquires/gba-music-with-timers" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+					<p>My goal with this program was to see if I could make the GBA play different notes at a spcified interval using the GBA's timer. In making this program, I learned how I could use timers and how I could play sounds on the GBA.</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>Interactive Program Written in Hexadecimal</summary>
+					<p>Language: None</p>
+					<a href="https://github.com/JKSquires/gba-hex/blob/main/interactive.gba" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+					<p>Once I had done a good amount of programming for the GBA in assembly, I thought to myself, "What if I try just writing the machine code?" And so I gave it a go! I spent so much time reading through and trying to understand stuff in the ARM architecture reference manual that went with the ARM7TDMI while also comparing assembly to the assembled code, and I had a handful of instructions down pretty well for a while (but as they say, "use it or lose it", and I'm trying not to lose it). This was one of the most fun and difficult adventures I've ever done in programming! I learned so much about really low-level computing, and I genuinely think this made me a better programmer.</p>
+				</details>
+			</li>
+		</ul>
+	</li>
+	<li>Minecraft Mods and Resource Packs
+		<ul>
+			<li>
+				<details>
+					<summary>Learning to Mod Minecraft</summary>
+					<img src="https://raw.githubusercontent.com/JKSquires/learning-to-mod-minecraft/refs/heads/main/images/all_added.gif">
+					<p>Language: Java</p>
+					<a href="https://github.com/JKSquires/learning-to-mod-minecraft" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+					<p>I wanted to learn to mod Minecraft a few years ago, and so I started learning and making this mod. It is a mod of Minecraft 1.19 that I had built up (slowly) over a year or so (I think) as I got ideas. It was a cool venture into modding Minecraft and was the first mod I ever made for any game. It was also one of my first ventures into the Java programming language. I had done some stuff in Java before, but not really in any large capacity. I really enjoyed making this; sometimes, I'd just work on it for hours trying to see if I could create something completely different from what I had done all on my own. Even though it took me longer than if I had followed what someone else did, it helped me learn and remember more.</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>Arrow Key Camera Controls Mod</summary>
+					<p>Language: Java</p>
+					<a href="https://github.com/JKSquires/arrow-key-camera-controls-mod" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+					<p>I modded Minecraft 1.20.4 to allow me to control the camera with the arrow keys. I wanted to be able to play around with it and make some challenges in the game for myself, and it turned out exactly as I had hoped! Another thing I wanted to try with this mod was to automate playing the game, but I sadly didn't get that far (maybe with AI I could do it!) When I mod Minecraft, I usually just add blocks and items, but this time allowed me to experiment with modding other parts of the game, which was fun! I initially had a few challenges with this mod; the main issue I had was the camera being too jittery because it only turned the camera every game tick, which is 1/20th of a second, but making it update every frame ended up working well. I also had issue with the speed of the camera, whether too slow or too fast, and although it took me a while, I think I got it to be almost perfect, which I'm very happy about.</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>Image Post-Processing Shader Using Minecraft Resource Packs</summary>
+					<img src="https://raw.githubusercontent.com/JKSquires/image-post-processing-shader-minecraft/refs/heads/main/screenshot.png">
+					<p>Language: OpenGL Shading Language</p>
+					<a href="https://github.com/JKSquires/image-post-processing-shader-minecraft/" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+					<p>When I first learned about post-processing shaders, I fell in love (figuratively); I loved how people were able to take the image data (along with any other information), transform it with math, and create a beautiful image. Because I had also been curious about Minecraft shaders for a while, I decided to try implementing some image filters and effects using post-processing shaders I could build into Minecraft resource packs. I learned a <em>lot</em> while doing this project: GLSL, shaders, Minecraft shader implementation, and GPU programming. I see now that some of these things (mainly GPU programming) could come in quite handy in the future, especially with AI doing a lot using GPUs.</p>
+				</details>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<details>
+			<summary>Decimal to Binary Converter - TI-Basic</summary>
+			<img src="https://raw.githubusercontent.com/JKSquires/decimal-to-binary-ti-basic/main/DECTOBIN.png">
+			<p>Language: TI-Basic</p>
+			<a href="https://github.com/JKSquires/decimal-to-binary-ti-basic" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+			<p>There's a program button on my TI-84 Plus CE, so I decided to learn and make something with it. I wanted to make something that could be useful and doesn't exist be default on it, so I decided on making a decimal to binary number converter. Although it isn't the most complicated thing in the world, I was able to learn a lot about doing calculations, writing to variables, using functions, and writing to output in TI-Basic (the programming language on the TI-84 Plus CE). It's so fun to learn different programming languages and how they can interract with systems because it lets me think more about language design.</p>
+		</details>
+	</li>
+</ul>
+<h2>Professional</h2>
+<ul>
+	<li>
+		<details>
+			<summary>dCache Kafka Digest</summary>
+			<p>Language: Python</p>
+			<a href="https://indico.fnal.gov/event/70325/contributions/319795/attachments/189651/261855/dCache%20Kafka%20Digest%20-%20Roadmap%20Presentation.pdf" target="_blank" rel="noopener noreferrer">Talk/Presentation</a>
+			<p><a href="https://github.com/fifemon/dcache-kafka-digest" target="_blank" rel="noopener noreferrer">(Private) GitHub Repository</a> (just putting it here for completeness)</p>
+			<p>This was the project I worked on during my internship at Fermilab. It is a program that takes in hundreds of storage "billing" events from dCache (a large file-storing system) off of one part (topic) of a kafka server (a real-time event streaming processor), aggregates, sums, converts, and formats the data into another format over a time period (usually every hour) for the monitoring sytem, and outputs it on another kafka topic. When I gave my talk on the project, I was encouraged to include a little section on what I got out of the intership, and I had gotten a lot out of it! The main thing was that I had to learn how to write a program for a semi-data intensive real-time environment, something I had never done before. I also had a lot of fun; I was afraid writing code for a non-personal or acedemic project wouldn't be engaging, but it was!</p>
+		</details>
+	</li>
+</ul>
+<h2>Academic</h2>
+<ul>
+	<li>
+		<details>
+			<summary>Pok&eacute;mon Battle Simulator</summary>
+			<p>Language: Python</p>
+			<a href="https://github.com/JKSquires/small-pokemon-battle-sim" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+			<p>The final project for my Computer Programming 2 class was to incorperate a lot of what we had learned over the semester into one project (mainly classes, functions, and json APIs). I decided to make a Pok&eacute;mon battle simulator. I loved programming it so much that I'd spend hours outside of class working on it and making it as good as I could. I'm really happy with the end result, and although it doesn't include everything I had wanted in it at the start, I think it ended in a great place.</p>
+		</details>
+	</li>
+</ul>
+
+<br>
+<h2>Extra Notes</h2>
+<ul>
+	<li>This, of course, is not even close to all of it. I put most of my best stuff on the internet under an online alias, and I prefer to keep my real name and my alias apart for privacy and security (no one likes it when you beat someone in an online videogame and they dox you. No fun, I'd know; competitive Minecraft gets people fired up sometimes).</li>
+	<li>I use localStorage to store if a user toggles dark mode on my site, but only once they have clicked the button. <strong>If you want to clear localStorage:</strong> <button onClick="localStorage.clear();location.reload();">click here.</button></li>
+</ul>
+
+<script src="./scripts.js"></script>
+</body>
+
+</html>
