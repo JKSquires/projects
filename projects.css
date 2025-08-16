@@ -34,25 +34,21 @@ summary table {
 .project_desc {
 	text-align: end;
 }
-#projects_table {
+
+#projects_overview {
+	display: flex;
+	gap: 8px;
+
 	width: 100%;
+	height: auto;
 }
-#projects_table tr {
-	height: 100%;
-}
-#projects_table tr td {
-	width: 33%;
-	height: 100%
-}
-#projects_table tr td button {
+#projects_overview button {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	flex: 1 0 0;
 
 	color: #000;
-
-	width: 100%;
-	height: 100%;
 
 	background-color: #ddd;
 
@@ -61,24 +57,23 @@ summary table {
 
 	padding: 16px;
 }
-#projects_table tr td button:hover {
+#projects_overview button:hover {
 	box-shadow: 0 5px 8px 0 #ccc;
 }
-#projects_table tr td button:active {
+#projects_overview button:active {
 	background-color: #ccc;
 }
-#projects_table tr td button div img {
+#projects_overview button div img {
 	display: block;
 
 	width: 100%;
 	min-height: 100%;
 }
-#projects_table tr td button div {
+#projects_overview button div {
 	display: flex;
 	align-items: center;
 
 	overflow: hidden;
-
 
 	width: 100%;
 	height: 15em;
