@@ -14,6 +14,9 @@ summary {
 
 	border-radius: 5px;
 }
+summary:hover {
+	background-color: #d4d4d4;
+}
 summary:active {
 	background-color: #ccc;
 }
